@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic management system</title>
+    <link rel="shortcut icon" href="images/teeth.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo" >
+                <div class="icon">
+                    <img src="images/l3.png" alt="" >
+                
+
+                <h1 class="logo1">Rimzim Dental Clinic</h1>
+            </div>
+        </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointmnet</a></li>
+
+            </ul>
+        </nav>
+        <div class="main">
+            <img src="images/d5.jpg" alt="">
+            <div class="maintext">
+                <h1>Care with best Dental care</h1>
+                <button>Learn more</button>
+            </div>
+        </div>
+        
+            <div class="head">
+                <h1>Our service's</h1>
+            </div>
+            <div class="services"> 
+                <div class="servicecart">
+                    <img src="images/ig1.webp" alt="" width="150px" height="130px">
+                    <p>Ultrasonic cleaning</p>
+                </div>
+                <div class="servicecart">
+                    <img src="images/l4.jpg" alt="" width="150px" height="130px">
+                    <p>Smile designing</p>
+                </div>
+                <div class="servicecart">
+                    <img src="images/ig3.webp" alt="" width="150px" height="130px">
+                    <p>Light Cure</p>
+                </div>
+                <div class="servicecart">
+                    <img src="images/ig4.webp" alt="" width="150px" height="130px">
+                    <p>Rotary Endodontics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="doctors">
+        <div class="head">
+            <h1>Our Doctor's</h1>
+        </div>
+        <div class="doctors">
+            <div class="slider">
+           
+            <div class="team">
+                <img src="images/d1.webp" alt="" >
+                <img src="images/d2.jpg" alt="">
+                <img src="images/d3.jpg" alt="" >
+                <img src="images/d4.avif" alt="" >
+            <div class="team">
+                <img src="images/d6.jpg" alt="" >
+                <img src="images/d7.jpg" alt="">
+                <img src="images/d8.jpg" alt="" >
+                <img src="images/d9.jpg" alt="" >
+              
+
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <div id="appointment">
+            <div class="head">
+                <h1>Book an appointment</h1>
+            </div>
+            <div class="form">
+                <input type="text" required placeholder="Enter name"  >
+                <input type="text" required placeholder="Enter Number" >
+                <input type="Date">
+                <input type="time">
+                <button id="btn">Book</button>
+
+            </div>
+        </div>
+        <div id="login">
+        <select id="role">
+            <option value="Doctor">Doctor</option>
+            <option value="receptionist">Receptionist</option>
+        </select>
+        <button onclick="login()">Login</button>
+
+    </div>
+
+        <div id="system">
+            <div id="doctorpanel">
+                <h2>Doctor panel</h2>
+                <button onclick="viewpatient()">View Patient Details</button>
+                <button onclick="logout()">Back to Login</button>
+                <div id="patients"></div>
+            </div>
+
+            <div id="Receptionist">
+                <h2>Receptionist panel</h2>
+              <input type="text" id="patientName" placeholder="Patient name">
+              <input type="text" id="prescription" placeholder="Prescription">
+                <button onclick="Addpatient()">Add Patient</button>
+                <button onclick="generatebill()">Generate bill</button>
+                <button onclick="logout()">Back to Login</button>
+
+
+                <div id="bill"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <H2>About us</H2>
+                <p>Multi-Specialty Dental Clinic In Pimpri-Chinchwad, Pune</p>
+                <p>If you need to know is there a Best Dentist in pimpri chinchwad or Best Dental Clinic in pimpri chinchwad.</p>
+                <p> Yes, there is. GoBest Dentist is a modern, hi-tech, </p>
+                <p>ISO certified chain of multi-specialty dental clinic in Pune, India.</p>
+              
+               
+
+            </div>
+            <div class="text">
+                <H2>Care</H2>
+                <p>Facility</p>
+                <p>Reviews</p>
+                <p>support</p>
+                <p>staff</p>
+          
+        </div>
+        <div class="text">
+            <H2>Address</H2>
+            <p>Jk hills</p>
+            <p>Galaxy park</p>
+            <p>220-52256554</p>
+            
+      
+    </div>
+    <div class="text">
+        <H2>Contact us</H2>
+        <p>LinkedIn</p>
+        <p>Instagram</p>
+        <p>Youtube</p>
+        <p>Facebook</p>
+  
+        </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
